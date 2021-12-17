@@ -1,0 +1,140 @@
+.sidbar{
+flex: 0.35;
+display: flex;
+flex-direction: column;
+display: block;
+}
+.manu__show{
+    color: black;
+    font-size: 30px !important;
+    padding: 15px;
+    cursor: pointer;
+    display: none !important;
+}
+.sidbar__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-right: 1px solid lightgray;
+}
+
+.show{
+    display: block !important;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width:10vw;
+}
+.sidbar__icon{
+    font-size: 19px !important;
+}
+
+.sidbar__search{
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    height: 39px;
+    padding: 10px;
+}
+.search__container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search__container > input{
+    border: none;
+    margin-left: 5px;
+    outline: none;
+}
+
+.sidbar__chat{
+    flex: 1;
+    overflow: scroll;
+}
+
+.sidbar__chat::-webkit-scrollbar{
+    width: 0;
+}
+
+
+.sidbarchat{
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+    transition: .1s;
+    align-items: center;
+}
+.sidbarchat:hover{
+    background: lightgray;
+}
+.sidbar__active{
+    color: rgba(57, 63, 61, 0.726);
+}
+.sidbarchat > .sidbarchat__info{
+    margin-left: 10px;
+}
+.sidbarchat h2,
+.sidbarchat__info h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+.sidbarchat__info > p{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* For responsive */
+
+
+
+@media screen and (max-width: 500px) {
+  .manu__show{
+display: block !important;
+} 
+.chatheader__info{
+    font-size: 10px !important;
+}
+.chat__massage {
+    width: 160px;
+    word-break: 30px;
+}
+.sidbar{
+  width: 110px !important;
+  overflow-x: hidden !important;
+  display: none;
+}
+
+
+.chatheader__right{
+    width: 120px !important;
+}
+
+.sidbarchat h2,
+ .sidbarchat__info h2{
+    font-size: 13px !important;
+}
+
+.avatar__img{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+}
+@media screen and (max-width: 7680px) {
+
+  .sidbar{
+    width: 185px;
+    overflow-x: hidden !important;
+  }
+  
+  
+  }
